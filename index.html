@@ -11,15 +11,17 @@
         <h1>Login do amor</h1>
         <hr>
 
-        <form action="">
-            <input type="text" id="nome" placeholder="Olá, digite o seu nome?">
+        <form onsubmit="verificarLogin(); return false;">
+            <input type="text" id="nome" placeholder="Olá, digite o seu nome">
             <br>
             <input type="password" id="senha" placeholder="Digite a senha secreta">
         </form>
 
-        <button onclick="verificarLogin()">Entrar</button>
+        <button id="botao" onclick="verificarLogin()">Entrar</button>
 
         <div class="mensagem" id="mensagemErro"></div>
     </div>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
